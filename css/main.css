@@ -9,6 +9,7 @@ h3 {
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
+  font-family: 'Marcellus SC', serif;
 }
 
 h4 {
@@ -25,6 +26,7 @@ h5 {
 p {
   color: #FFFFFF;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /******* GRID STYLES*******/
@@ -149,29 +151,42 @@ nav ul li a {
 
 
 #work .jubilee-austen {
-  box-shadow: 0px 0px 40px #FF5CC9;
-  margin-left: 40px;
+  box-shadow: 0px 0px 50px #FF5CC9;
+  margin-left: 60px;
 }
 
 #work .unplugged {
-  box-shadow: 0px 0px 40px #BCED09;
+  box-shadow: 0px 0px 50px #BCED09;
 }
 
 #work .lolcat {
-  box-shadow: 0px 0px 40px #5BCBD7;
-  margin-left: 40px;
+  box-shadow: 0px 0px 50px #5BCBD7;
+  margin-left: 60px;
 }
 
 
 /********* ABOUT STYLES *******/
 
 #about {
-  height: 550px;
+  padding: 50px 0;
+  background: linear-gradient(35deg, #1F767F, #FF5CC9);
+}
+
+
+#about .half-width {
+  width: 500px;
+}
+
+#about p {
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 #about img {
   width: 400px;
   border-radius: 50px;
+  border: 3px #FFFFFF solid;
+  margin-left: 250px;
 }
 
 
