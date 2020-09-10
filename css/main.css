@@ -99,6 +99,7 @@ header span {
 nav {
   display: flex;
   justify-content: center;
+  border-top: .5px #45475F solid;
 }
 
 nav ul {
@@ -134,25 +135,18 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
-#hero h2 {
+h2 {
   color: #FFFFFF;
   font-size: 2em;
   line-height: 70px;
   padding: 50px 0;
 }
 
-#hero h2 span {
+h2 span {
   text-shadow: #01F0F4 1px 0 10px;
   font-family: 'Press Start 2P', cursive;
   font-size: .85em;
 }
-
-#hero h3 {
-  color: #FFFFFF;
-  font-size: 2.5em;
-  padding-top: 40px;
-}
-
 
 
 /******* WORK STYLES - MOBILE *********/
@@ -305,6 +299,10 @@ footer p {
   margin-bottom: 50px;
 }
 
+#copyright {
+  margin: 100px 0 10px 0;
+}
+
 
 /*********************************************************
 
@@ -316,21 +314,55 @@ footer p {
 
   header {
     width: 100%;
+    margin: 0;
   }
 
   header .full-width {
-    border: 1px red solid;
     justify-content: space-between;
   }
 
   header .half-width {
-    border: 1px blue solid;
+    width: 49%;
+    justify-content: flex-end;
   }
 
   header h1 {
-    width: 25%;
-    border: 1px yellow solid;
+    font-size: 1.85em;
+    justify-content: flex-start;
+    width: 100%;
   }
+
+  nav {
+    width: 80%;
+    border: none;
+  }
+
+  nav ul {
+    flex-flow: nowrap;
+    width: 90%;
+    font-size: .85em;
+    justify-content: space-between;
+  }
+
+  /******* HERO SECTION - TABLET ********/
+
+  #hero .full-width {
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin: 50px 0;
+    width: 70%;
+
+  }
+
+  h2 span {
+    font-size: 1em;
+  }
+
+
+
 
 
 
