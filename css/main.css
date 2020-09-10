@@ -24,10 +24,12 @@ figure {
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 35px;
   color: #FFFFFF;
   text-align: center;
-  font-family: 'Special ELite', cursive;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: #01F0F4 1px 0 10px;
 }
 
 h4 {
@@ -67,7 +69,7 @@ p {
 }
 
 
-/********HEADER STYLES ******/
+/********HEADER STYLES - MOBILE ******/
 
 header {
   color: #FFFFFF;
@@ -80,17 +82,18 @@ header {
 
 header h1 {
   font-size: 2.25em;
-  font-family: 'Rock Salt', cursive;
-  background: -webkit-linear-gradient(#FFFFFF, #1F767F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: #01F0F4 1px 0 10px;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+  width: 50%;
   padding: 0;
 }
 
 header span {
   padding-left: 20px;
+  margin: 0;
 }
 
 nav {
@@ -121,7 +124,7 @@ nav ul li a {
 }
 
 
-/******** HERO STYLES *******/
+/******** HERO STYLES - MOBILE *******/
 
 #hero {
   background: url("../img/hero-background.png");
@@ -134,14 +137,14 @@ nav ul li a {
 #hero h2 {
   color: #FFFFFF;
   font-size: 2em;
-  line-height: 60px;
-  text-align: center;
-  padding: 75px 0;
+  line-height: 70px;
+  padding: 50px 0;
 }
 
 #hero h2 span {
   text-shadow: #01F0F4 1px 0 10px;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .85em;
 }
 
 #hero h3 {
@@ -152,10 +155,10 @@ nav ul li a {
 
 
 
-/******* WORK STYLES *********/
+/******* WORK STYLES - MOBILE *********/
 
 #work {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 #work full-width{
   display: flex;
@@ -168,6 +171,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .project {
@@ -179,22 +183,27 @@ nav ul li a {
 
 #work .section-heading {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 
 #work img {
-  margin: 70px 0;
+  margin: 10px 0;
   border-radius: 10px;
   width: 80%;
-  text-align: center;
 }
 
 #work .description {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   text-align: center;
+}
+
+#work .description p {
+    font-size: 1em;
+    margin: 0 0 100px 0;
 }
 
 #work h4 {
@@ -220,7 +229,7 @@ nav ul li a {
 }
 
 
-/********* ABOUT STYLES *******/
+/********* ABOUT STYLES - MOBILE *******/
 
 #about {
   padding-top: 50px;
@@ -232,13 +241,14 @@ nav ul li a {
 }
 
 
-#about .half-width {
-  width: 45%;
-}
 
 #about p {
-  padding-left: 50px;
-  padding-top: 20px;
+  font-size: 1em;
+}
+
+#about figure {
+  text-align: center;
+  margin-top: 50px;
 }
 
 #about img {
@@ -248,7 +258,7 @@ nav ul li a {
 }
 
 
-/*********CONTACT STYLES ********/
+/*********CONTACT STYLES - MOBILE********/
 
 footer .full-width {
   padding: 50px 0;
@@ -266,21 +276,16 @@ footer .third-width {
 }
 
 footer h4 {
-  font-family: 'Special Elite', cursive;
-  font-size: 1.875em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.25em;
   margin: 10px 0;
-}
-
-
-#email-me h4 {
-  padding-bottom: 15px;
+  text-shadow: #01F0F4 1px 0 10px;
 }
 
 #email-me a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 1.25em;
-  text-shadow: #01F0F4 1px 0 10px;
 }
 
 #follow-me a {
@@ -288,7 +293,6 @@ footer h4 {
   text-decoration: none;
   color: #FFFFFF;
   margin: 0 10px;
-  text-shadow: #01F0F4 1px 0 10px;
 }
 
 
@@ -298,4 +302,37 @@ footer h3 {
 
 footer p {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/*********************************************************
+
+      MEDIA QUERIES
+
+**********************************************************/
+
+@media only screen and (min-width:768px) {
+
+  header {
+    width: 100%;
+  }
+
+  header .full-width {
+    border: 1px red solid;
+    justify-content: space-between;
+  }
+
+  header .half-width {
+    border: 1px blue solid;
+  }
+
+  header h1 {
+    width: 25%;
+    border: 1px yellow solid;
+  }
+
+
+
+
 }
