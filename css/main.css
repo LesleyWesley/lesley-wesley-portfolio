@@ -312,6 +312,11 @@ footer p {
 
 @media only screen and (min-width:768px) {
 
+  h3 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
   header {
     width: 100%;
     margin: 0;
@@ -360,6 +365,90 @@ footer p {
   h2 span {
     font-size: 1em;
   }
+
+  /******* WORK SECTION - TABLET ******/
+
+  #work {
+    margin: 0 0 50px 0;
+  }
+
+  #work .section-heading {
+    width: 70%;
+  }
+
+  #work .project {
+    justify-content: space-between;
+    flex-flow: nowrap;
+  }
+
+  #work .half-width {
+    align-items: center;
+    width: 50%;
+  }
+
+  #work .description {
+    width: 50%;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  #work h4 {
+    font-size: 1.125em;
+    margin-top: 0;
+  }
+
+  #work h5 {
+    font-size: .85em;
+  }
+
+  #work .description p {
+    margin: 0;
+    font-size: .85em;
+  }
+
+  #unplugged-project {
+  margin: 100px 0;
+}
+
+/****** ABOUT SECTION - TABLET ******/
+
+  #about .full-width {
+    flex-flow: row wrap;
+  }
+
+  #about .half-width {
+    width: 50%;
+  }
+
+  #about p {
+    font-size: .85em;
+  }
+
+  #about figure {
+    text-align: right;
+  }
+
+  /****** CONTACT SECTION - TABLET *****/
+
+  footer .full-width {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  footer p {
+    width: 100%;
+  }
+
+  #email-me h4 {
+    margin-bottom: 30px;
+  }
+
+  #copyright {
+    margin: 75px 0 0 0;
+    font-size: .85em;
+  }
+
 
 
 
