@@ -11,7 +11,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  max-width: 1200px;
   font-size: 1em;
 }
 
@@ -328,7 +327,6 @@ footer p {
 
   header .half-width {
     width: 49%;
-    justify-content: flex-end;
   }
 
   header h1 {
@@ -340,6 +338,7 @@ footer p {
   nav {
     width: 80%;
     border: none;
+    justify-content: flex-end;
   }
 
   nav ul {
@@ -450,10 +449,114 @@ footer p {
   }
 
 
+}
 
+/*****************************************************
 
+      DESKTOP MEDIA QUERIES
 
+******************************************************/
 
+@media only screen and (min-width:1200px) {
 
+  header {
+    justify-content: space-between;
+  }
 
+  header .half-width {
+    width: 35%;
+    justify-content: flex-start;
+  }
+
+  header h1 {
+    width: 20%;
+  }
+
+  nav {
+    font-size: 1.125em;
+  }
+
+  /***** HERO SECTION - DESKTOP *****/
+
+  h2 {
+    font-size: 3.5em;
+    line-height: 100px;
+    width: 50%;
+  }
+
+  h2 span {
+    font-size: 1.125em;
+  }
+
+  /***** WORK SECTION - DESKTOP *****/
+
+  h3 {
+    font-size: 2.125em;
+  }
+
+  #work .project {
+    margin: 100px 0;
+    justify-content: space-around;
+  }
+
+  #work .description {
+    width: 35%;
+  }
+
+  #work h4 {
+    font-size: 1.5em;
+  }
+
+  #work h5 {
+    font-size: 1em;
+  }
+
+  #work .description p {
+    font-size: 1em;
+  }
+
+  /***** ABOUT SECTION - DESKTOP *****/
+
+  #about .full-width {
+    justify-content: space-around;
+  }
+
+  #about .half-width {
+    width: 40%;
+  }
+
+  #about p {
+    font-size: 1.125em;
+  }
+
+  /****** CONTACT SECTION - DESKTOP ******/
+
+  footer .full-width {
+    justify-content: center;
+  }
+
+  footer p {
+    margin-bottom: 100px;
+  }
+
+  footer .third-width {
+    width: 40%;
+  }
+
+  footer h4 {
+    font-size: 1.75em;
+  }
+
+  #email-me h4 {
+    margin-bottom: 35px;
+  }
+
+  #follow-me h4 {
+    margin-bottom: 10px;
+  }
+
+  #follow-me a {
+    font-size: 2.75em;
+    margin: 0 15px;
+  }
 }
