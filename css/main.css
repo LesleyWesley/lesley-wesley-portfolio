@@ -222,6 +222,14 @@ h2 span {
   box-shadow: 0px 0px 50px #5BCBD7;
 }
 
+#work .magic-ball {
+  box-shadow: 0px 0px 50px #FF5CC9;
+}
+
+#work .blog {
+  box-shadow: 0px 0px 50px #BCED09;
+}
+
 
 /********* ABOUT STYLES - MOBILE *******/
 
@@ -409,6 +417,14 @@ footer p {
   #unplugged-project {
   margin: 100px 0;
 }
+
+  #lolcat-clock {
+    margin-bottom: 100px;
+  }
+
+  #magic-8 {
+    margin-bottom: 100px;
+  }
 
 /****** ABOUT SECTION - TABLET ******/
 
